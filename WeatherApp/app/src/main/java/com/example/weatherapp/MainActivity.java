@@ -20,8 +20,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-//fe6590fdd2b903afd2775e71b3f6ef28
-//http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}
+
 
 //sample: https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=439d4b804bc8187953eb36d2a8c26a02
 
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         DownloadTask downloadTask = new DownloadTask();
         String result = "";
         try {
-            result = downloadTask.execute("https://samples.openweathermap.org/data/2.5/weather?q=" + city + "&appid=fe6590fdd2b903afd2775e71b3f6ef28").get();
+            result = downloadTask.execute("https://samples.openweathermap.org/data/2.5/weather?q=" + city + "&appid=439d4b804bc8187953eb36d2a8c26a02").get();
             //Log.i("Result", result);
             for (int i=0; i<weatherArr.length(); i++) {
                 JSONObject jsonpart = weatherArr.getJSONObject(i);
