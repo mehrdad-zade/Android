@@ -15,8 +15,8 @@ public class RapidAPI {
             Request request = new Request.Builder()
                     .url("https://apidojo-yahoo-finance-v1.p.rapidapi.com/auto-complete?q=" + ticker)
                     .get()
-                    .addHeader("x-rapidapi-key", "756c72c338mshf89e9eae63dc07ep19bc08jsnd544a14df999")
-                    .addHeader("x-rapidapi-host", "apidojo-yahoo-finance-v1.p.rapidapi.com")
+                    .addHeader("x-rapidapi-key", "")
+                    .addHeader("x-rapidapi-host", "")
                     .build();
             Response response = client.newCall(request).execute();
             Log.i("Success - RapidAPI", "...................................");
